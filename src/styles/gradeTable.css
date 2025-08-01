@@ -1,0 +1,87 @@
+/* gradeTable.css */
+
+.grade-table {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.grade-table h2 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.grade-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 600px;
+  border-radius: 8px;
+}
+
+.grade-table th,
+.grade-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.grade-table th {
+  text-align: center;
+  background-color: #b0cbdda7;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #4a5568;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  border-radius: 4%;
+}
+
+.grade-table tbody tr:hover {
+  background-color: #d8e4f05d;
+}
+
+.grade-table td {
+  color: #2d3748;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 2%;
+  text-align: center;
+}
+
+.grade-table tbody tr:nth-child(odd) {
+  background-color: #f7fafc;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .grade-table {
+    padding: 1rem;
+  }
+
+  .grade-table table {
+    font-size: 0.95rem;
+    min-width: 100%;
+  }
+
+  .grade-table th,
+  .grade-table td {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grade-table table {
+    font-size: 0.9rem;
+  }
+
+  .grade-table h2 {
+    font-size: 1.25rem;
+  }
+}

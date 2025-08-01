@@ -1,0 +1,178 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.not-found-title {
+  font-size: 8rem;
+  margin: 0;
+  color: #4a6baf;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.not-found-subtitle {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+  color: #333;
+}
+
+.not-found-text {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.not-found-button {
+  background-color: #4a6baf;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 107, 175, 0.3);
+}
+
+.not-found-button:hover {
+  background-color: #3a5699;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(74, 107, 175, 0.4);
+}
+
+.not-found-button:active {
+  transform: translateY(1px);
+}
+
+/* Ghost Animation */
+.not-found-animation {
+  margin: 0 auto 40px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.ghost {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: float 3s ease-in-out infinite;
+}
+
+.face {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  left: 20%;
+  top: 25%;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background: #4a6baf;
+  border-radius: 50%;
+  animation: blink 4s infinite;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 15px;
+  border-radius: 0 0 20px 20px;
+  background: #4a6baf;
+}
+
+.hands {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 70%;
+}
+
+.hand {
+  width: 25px;
+  height: 30px;
+  background: rgba(147, 228, 228, 0.65);
+  border-radius: 10px;
+  animation: wave 3s ease-in-out infinite;
+}
+
+.hand:first-child {
+  transform: rotate(30deg);
+  margin-left: -10px;
+}
+
+.hand:last-child {
+  transform: rotate(-30deg);
+  margin-right: -10px;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  filter: blur(5px);
+  animation: shadow 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(30deg); margin-left: -10px; }
+  50% { transform: rotate(-30deg); margin-left: 10px; }
+}
+
+@keyframes shadow {
+  0%, 100% { width: 100px; }
+  50% { width: 120px; }
+}
+
+@keyframes blink {
+  0%, 49%, 51%, 100% { height: 20px; }
+  50% { height: 5px; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
