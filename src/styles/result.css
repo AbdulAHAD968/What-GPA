@@ -308,14 +308,14 @@
 /* Remove Credit Tab Button */
 .remove-credit-tab {
   position: absolute;
-  right: -10px;
-  top: -10px;
-  background-color: #a11010;
+  right: -3px;
+  top: -0.5px;
+  background-color: red;
   color: white;
   border: none;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +326,7 @@
 }
 
 .remove-credit-tab:hover {
-  background-color: #c10808;
+  background-color: rgba(214, 29, 29, 0.838);
 }
 
 /* Responsive adjustments */
