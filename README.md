@@ -131,6 +131,10 @@ Please ensure your code follows the ESLint rules defined in `eslint.config.js`.
 ![What GPA? Logo](/github-readme-assets/result.png)
 ---
 
+## Lighthouse Test Results
+![What GPA? Logo](/github-readme-assets/lighthouse-test-what_gpa.PNG)
+
+---
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
