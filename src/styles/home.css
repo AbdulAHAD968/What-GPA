@@ -174,7 +174,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.358);
   border-radius: 16px;
   padding: 2.5rem 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -362,7 +362,7 @@
   }
   
   .primary-cta, .secondary-cta {
-    width: 100%;
+    width: 85%;
     text-align: center;
     justify-content: center;
   }
